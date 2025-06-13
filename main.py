@@ -3,13 +3,9 @@ from typing import Optional
 from fastapi import FastAPI
 
 import random  # randomライブラリを追加
-<<<<<<< HEAD
-from fastapi.responses import HTMLResponse #インポート
-=======
-
-
->>>>>>> 9fe3c7d9f6d959ca98c4cfff09422e48fdceabc2
 app = FastAPI()
+from fastapi.responses import HTMLResponse #インポート
+
 
 
 @app.get("/")
