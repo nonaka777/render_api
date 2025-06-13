@@ -50,4 +50,3 @@ def index():
     return HTMLResponse(content=html_content, status_code=200)
 
 
->>>>>>> 9fe3c7d9f6d959ca98c4cfff09422e48fdceabc2
