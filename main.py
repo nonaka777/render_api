@@ -1,12 +1,11 @@
 from typing import Optional
 
 from fastapi import FastAPI
-
+from fastapi.responses import HTMLResponse #インポート
 import random  # randomライブラリを追加
 
-from fastapi.responses import HTMLResponse #インポート
-
 app = FastAPI()
+
 
 @app.get("/")
 async def root():
@@ -18,7 +17,6 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/omikuji")
 def omikuji():
-
     omikuji_list = [
         "大吉",
         "中吉",
@@ -35,7 +33,11 @@ def omikuji():
     return omikuji_list[random.randrange(10)]
 
 
-    @app.get("/index")
+
+
+### コードいろいろ... ###
+
+@app.get("/index")
 def index():
     html_content = """
     <html>
@@ -48,5 +50,4 @@ def index():
     </html>
     """
     return HTMLResponse(content=html_content, status_code=200)
-
 
