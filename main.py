@@ -18,6 +18,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/omikuji")
 def omikuji():
+
     omikuji_list = [
         "大吉",
         "中吉",
