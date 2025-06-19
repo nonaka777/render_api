@@ -53,31 +53,30 @@ def index():
                 <th>曜日</th>
                 <th>時間</th>
                 <th>講義名</th>
-                <th>担当教員</th>
                 <th>教室</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>月曜日</td>
-                <td>09:00 - 10:30</td>
-                <td>情報セキュリティ基礎</td>
-                <td>田中 一郎</td>
-                <td>101教室</td>
+                <td>11:10 - 12:50</td>
+                <td>基礎ゼミ</td>
+                <td>なし</td>
+                <td>2403教室</td>
             </tr>
             <tr>
                 <td>火曜日</td>
-                <td>11:00 - 12:30</td>
-                <td>ネットワーク工学</td>
-                <td>佐藤 花子</td>
-                <td>202教室</td>
+                <td>13:40 - 15:20</td>
+                <td>CGモデリング</td>
+                <td>電大　太郎</td>
+                <td>FI科教室</td>
             </tr>
             <tr>
                 <td>水曜日</td>
-                <td>13:00 - 14:30</td>
+                <td>9:20 - 11:10</td>
                 <td>プログラミング演習</td>
-                <td>鈴木 太郎</td>
-                <td>PCルームA</td>
+                <td>電大　太郎</td>
+                <td>丹羽ホール</td>
             </tr>
             <!-- 必要に応じて行を追加 -->
         </tbody>
@@ -89,4 +88,4 @@ def index():
 
 @app.post("/present")
 async def give_present(present):
-    return {"response": f"サーバです。メリークリスマス！ {present}ありがとう。お返しはキャンディーです。"}  # f文字列というPythonの機能を使っている
+    return {"response": f"サーバです。21歳のお誕生日おめでとう！ {present}ありがとう。お返しはディスクトップPCとS評価の単位です。"}  # f文字列というPythonの機能を使っている
